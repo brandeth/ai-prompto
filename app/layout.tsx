@@ -1,4 +1,6 @@
 import '@styles/globals.css'
+import Nav from '@components/Nav'
+import Provider from '@components/Provider'
 
 type RootLayoutProps = {
   children: React.ReactNode
@@ -18,6 +20,7 @@ const RootLayout = ({children}: RootLayoutProps) => {
         </div>
 
         <main className="app">
+          <Nav />
           {children}
         </main>
       </body>
